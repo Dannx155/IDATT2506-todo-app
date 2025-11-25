@@ -53,11 +53,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff'
   },
   checked: {
-    backgroundColor: '#4CAF50',
-    borderColor: '#4CAF50'
+    backgroundColor: '#f5f5f5',
+    borderColor: 'rgba(7,7,7,0.67)'
   },
   checkmark: {
-    color: '#fff',
+    color: '#070707',
     fontSize: 14,
     fontWeight: 'bold'
   },
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   },
   textDone: {
     textDecorationLine: 'line-through',
-    color: '#999'
+    color: 'rgba(7,7,7,0.67)'
   }
 });
 

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { View, TextInput, StyleSheet, NativeSyntheticEvent, TextInputSubmitEditingEventData } from 'react-native';
+import { View, TextInput, StyleSheet } from 'react-native';
 
 
 type Props = {
@@ -14,7 +14,7 @@ const InputField: React.FC<Props> = ({ placeholder, value, onChangeText, onSubmi
   const ref = useRef<TextInput | null>(null);
 
 
-  const handleSubmit = (e: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => {
+  const handleSubmit = () => {
     if (!value.trim()) return;
     onSubmit();
     // Keep focus after submission
@@ -32,7 +32,6 @@ const InputField: React.FC<Props> = ({ placeholder, value, onChangeText, onSubmi
         value={value}
         onChangeText={onChangeText}
         returnKeyType="done"
-        blurOnSubmit={false}
         onSubmitEditing={handleSubmit}
         accessibilityLabel="Legg til nytt element"
         accessibilityHint="Skriv inn tekst og trykk Enter for å legge til"
