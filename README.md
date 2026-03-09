@@ -97,31 +97,6 @@ npm run web
 
 ---
 
-### EAS Configuration (Build & Submit)
-
-This project is configured for **Expo Application Services (EAS)**:
-
-- `eas.json` defines build profiles (`development`, `preview`, `production`) and submit configuration.
-- `app.json` contains the Expo app config, including icons, splash screen, Android package (`com.dannx.handlelisteexpo`) and EAS project ID.
-
-Examples (requires `eas-cli` and an Expo account):
-
-```bash
-# Install EAS CLI (if not installed)
-npm install -g eas-cli
-
-# Configure once
-eas login
-
-# Build for development (internal distribution)
-eas build --profile development --platform android
-
-# Build for production
-eas build --profile production --platform android
-```
-
----
-
 ### Usage Overview
 
 - **Create a list**: Tap `+ Ny liste` in the tabs bar.
@@ -131,7 +106,6 @@ eas build --profile production --platform android
 - **Add item**: Type text in the input field on the active list and submit.
 - **Toggle item**: Tap the item (or a checkbox) to mark it as done / not done.
 - **Delete item**: Use the delete action on the item (e.g. trash icon / button) and confirm if prompted.
-- **Reorder items**: Long‑press and drag an item (if drag handle is visible) to change its position within the list.
 
 ---
 
