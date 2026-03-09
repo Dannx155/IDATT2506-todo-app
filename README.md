@@ -1,4 +1,4 @@
-## Handleliste Expo
+## ToDo
 
 Simple, offline‑first shopping list app built with **React Native** and **Expo**.  
 You can create multiple lists, add items, mark them as done, reorder them, and everything is stored locally on the device.
